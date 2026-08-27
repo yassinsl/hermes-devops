@@ -13,9 +13,7 @@ class Settings(BaseSettings):
         env_file=".env",
         extra="ignore",  # Add any other previous config options here
     )
-try:
-    Config = Settings()
-except ValidationError as e:
-    msgerror = e.errors()[0]['msg']
-    print(f"Error: {msgerror}")
+
+Config = Settings()
+
     
