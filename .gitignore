@@ -1,0 +1,9 @@
+.venv/
+.github
+.env
+.vscode
+.DS_Store
+__pycache__
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
